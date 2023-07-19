@@ -1,0 +1,107 @@
+:root {
+  font-weight: 400;
+
+  --bg: rgb(214, 214, 214);
+  --bg2: #a6a6a6;
+  --text: #242424;
+  --border: #5e5e5e;
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  transition: 0.3s;
+}
+
+@font-face {
+  font-family: ComfortaaM;
+  src: url(./assets/fonts/Comfortaa-Medium.ttf);
+}
+@font-face {
+  font-family: DGrotesque;
+  src: url(./assets/fonts/DarkerGrotesque-Medium.ttf);
+}
+@font-face {
+  font-family: RalewayM;
+  src: url(./assets/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: RalewaySB;
+  src: url(./assets/fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: RalewayB;
+  src: url(./assets/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: DGrotesqueSB;
+  src: url(./assets/fonts/DarkerGrotesque-SemiBold.ttf);
+}
+@font-face {
+  font-family: DGrotesqueB;
+  src: url(./assets/fonts/DarkerGrotesque-Bold.ttf);
+}
+@font-face {
+  font-family: DGrotesqueXB;
+  src: url(./assets/fonts/DarkerGrotesque-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg2);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--border);
+}
+::selection {
+  background-color: var(--bg2);
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+a {
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: inherit;
+}
+
+#app {
+  height: 100dvh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* ComfortaaM. DGrotesque. DGrotesqueSB. DGrotesqueB. DGrotesqueXB RalewayM. RalewaySB. RalewayB */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
